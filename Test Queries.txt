@@ -1,0 +1,23 @@
+SELECT DepartmentName, AVG(Earnings) as AverageEarnings 
+FROM {table_name} 
+GROUP BY DepartmentName;
+
+===========================================================
+
+SELECT PersonName, DepartmentName, JobTitle, Earnings 
+FROM {table_name} 
+WHERE Earnings > 150000;
+
+===========================================================
+
+SELECT PersonName, DepartmentName, JobTitle, Earnings 
+FROM {table_name} 
+WHERE Earnings > 150000;
+
+===========================================================
+
+SELECT JobTitle, COUNT(*) as EmployeeCount 
+FROM {table_name} 
+GROUP BY JobTitle 
+ORDER BY EmployeeCount DESC;
+
